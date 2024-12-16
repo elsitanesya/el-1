@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <span class="logo-text">Portfolio</span>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_xyadoh9h.json" 
+                background="transparent" 
+                speed="1" 
+                style="width: 50px; height: 50px;" 
+                loop 
+                autoplay>
+            </lottie-player>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="animate-text">Selamat Datang di Portfolio Saya</h1>
+                <p class="typing-text">perkenalkan nama saya Elsita Nesya Aulia</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">Lihat Proyek</a>
+                    <a href="#contact" class="btn secondary-btn">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="hero-animation">
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_w51pcehl.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 400px; height: 400px;"
+                    loop
+                    autoplay>
+                </lottie-player>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <div class="about-content">
+            <img src="img.jpeg" alt="Elsita Nesya Aulia" class="profile-image">
+            <div class="about-text">
+                <p>Halo! perkenalkan nama saya adalah Elsita Nesya Aulia, saya adalah seorang siswa smk n 1 jepara dengan jurusan teknik komputer jaringan .</p>
+                <div class="skills">
+                    <h3>Keahlian:</h3>
+                    <ul>
+                        <li>Instalasi Jaringan komputer</li>
+                        <li>desain grafis</li>
+                        <li>perbaikan komputer</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Proyek Saya</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500" alt="Network Installation">
+                    <div class="overlay">
+                        <div class="project-details">
+                            <h4>Instalasi Jaringan LAN</h4>
+                        </div>
+                    </div>
+                </div>
+                <h3>Instalasi Jaringan LAN</h3>
+                <p>Proyek instalasi jaringan LAN untuk laboratorium komputer sekolah, termasuk konfigurasi switch dan router.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500" alt="Server Configuration">
+                    <div class="overlay">
+                        <div class="project-details">
+                            <h4>Server Configuration</h4>
+                            <div class="server-icons">
+                                <i class="fas fa-server"></i>
+                                <i class="fas fa-cogs"></i>
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                            <div class="server-status">
+                                <div class="status-dot"></div>
+                                <span>Server Online</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Konfigurasi Server</h3>
+                <p>Implementasi dan konfigurasi server untuk sistem manajemen jaringan menggunakan Linux dengan fokus pada keamanan dan performa.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=500" alt="Graphic Design">
+                    <div class="overlay">
+                        <div class="project-details">
+                            <h4>Desain Grafis</h4>
+                            <div class="design-icons">
+                                <i class="fas fa-paint-brush"></i>
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Desain Grafis Kreatif</h3>
+                <p>Membuat berbagai desain visual menarik menggunakan Adobe Creative Suite, termasuk logo, banner, dan konten media sosial dengan animasi.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Hubungi Saya</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Nama" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Pesan" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Portfolio Saya. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
